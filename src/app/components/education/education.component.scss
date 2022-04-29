@@ -20,6 +20,23 @@ div {
     border-radius: 4%;
 }
 
+// Animation som hör att innehåll kommer från höger
+#miWrapper {
+    animation: from-right 1s;
+}
+
+#shWrapper {
+    animation: from-right 1.5s;
+}
+
+#diverseWrapper {
+    animation: from-right 2s;
+}
+
+#jensenWrapper {
+    animation: from-right 2.5s;
+}
+
 h2 {
     color: #e78ea5;
     margin-bottom: 2%;

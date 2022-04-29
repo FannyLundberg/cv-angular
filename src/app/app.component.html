@@ -1,9 +1,9 @@
 <header>
   <div>
     <div id="hamburger" (click)="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span id="menuLine1" [ngClass]="menuOpen ? 'open' : 'closed' "></span>
+      <span id="menuLine2" [ngClass]="menuOpen ? 'open' : 'closed' "></span>
+      <span id="menuLine3" [ngClass]="menuOpen ? 'open' : 'closed' "></span>
     </div>
 
     <nav id="menuNav" *ngIf="menuOpen">
@@ -60,5 +60,5 @@
     </li>
   </ul>
 
-  <p>Fanny Lundberg © 2022</p>
+  <p id="copyright">Fanny Lundberg © 2022</p>
 </footer>

@@ -1,11 +1,18 @@
+// Hamburgermeny
 #hamburger {
-    position: fixed;
+    position: absolute;
     top: 30px;
     right: 5px;
     width: 50px;
     height: 50px;
     z-index: 1;
     cursor: pointer;
+    &:hover {
+        #menuLine2.closed {
+            transform: translateX(2px);
+            translate: 0.45s ease-in;
+        }
+    }
 }
 
 span {
@@ -17,6 +24,42 @@ span {
     display: block;
 }
 
+
+// Animation för när menyn öppnas
+#menuLine1.open {
+    transform: rotate(-45deg) translate(-3px, 11px);
+    transition: 0.3s;
+    background-color: #e78ea5;
+}
+
+#menuLine2.open {
+    opacity: 0;
+}
+
+#menuLine3.open {
+    transform: rotate(45deg) translate(-3px, -11px);
+    transition: 0.3s;
+    background-color: #e78ea5;
+}
+
+
+// Animation för när menyn stängs
+#menuLine1.closed {
+    transform: rotate(0deg);
+    transition: 0.35s;
+}
+
+#menuLine2.closed {
+    opacity: 1;
+}
+
+#menuLine3.closed {
+    transform: rotate(0deg);
+    transition: 0.35s;
+}
+
+
+// Öppen meny
 #navUl {
     position: absolute;
     height: 100vh;
@@ -47,6 +90,8 @@ a {
     }
 }
 
+
+// Footer
 #contactUl {
     display: flex;
     justify-content: space-around;
@@ -59,6 +104,17 @@ a {
     }
 }
 
-p {
+#copyright {
     padding-top: 3%;
+}
+
+
+// Animation för att innehåll ska komma in från höger
+@keyframes from-right {
+    0% {
+        transform: translateX(100%);
+    }
+    100% { 
+        transform: translateX(0%);
+    }
 }

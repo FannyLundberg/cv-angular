@@ -4,7 +4,7 @@
 }
 
 body {
-    width: 100vw;
+    width: fit-content;
     min-height: 100vh;
     max-height: fit-content;
     background-color: #0b0b0b;
@@ -21,9 +21,13 @@ header {
 }
 
 main {
-    width: 100vw;
     min-height: 80vh;
     max-height: fit-content;
+}
+
+div {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 footer {
