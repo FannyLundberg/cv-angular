@@ -36,3 +36,27 @@ footer {
     background-color: rgba(255,255,255,0.1);
     border-top: 1px solid rgb(119, 119, 119);
 }
+
+// Anpassning för skärmar större än 768px
+@media screen and (min-width: 768px) {
+    header {
+        height: 8vh;
+    }
+
+    main {
+        min-height: 82vh;
+        max-height: fit-content;
+    }
+}
+
+// Anpassning för skärmar större än 1200px
+@media screen and (min-width: 1200px) {
+    header {
+        height: 10vh;
+    }
+
+    main {
+        min-height: 80vh;
+        max-height: fit-content;
+    }
+}

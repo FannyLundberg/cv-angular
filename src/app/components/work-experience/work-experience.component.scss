@@ -53,6 +53,7 @@ div {
 h2 {
     color: #e78ea5;
     margin-bottom: 2%;
+    font-size: 1.2rem;
 }
 
 h3 {
@@ -63,4 +64,9 @@ p {
     margin-bottom: 3%;
     padding-left: 0;
     padding-right: 0;
+}
+
+.borderP {
+    border-bottom: 2px solid #464444;
+    padding-bottom: 4%;
 }
