@@ -118,3 +118,23 @@ a {
         transform: translateX(0%);
     }
 }
+
+// Anpassning för skärmar större än 1200px
+@media screen and (min-width: 1200px) {
+    #contactUl {
+        padding-top: 0.5%;
+    }
+
+    #copyright {
+        padding-top: 1%;
+    }
+
+    // Öppen meny
+    #navUl {
+        padding-top: 5%;
+    }
+
+    .navLi {
+        margin-top: 5%;
+    }
+}

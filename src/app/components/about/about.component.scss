@@ -35,3 +35,22 @@ div {
 #paddingP {
     padding-bottom: 2%;
 }
+
+// Anpassning för skärmar som är 1200px och uppåt
+@media screen and (min-width: 1200px) {
+    h1 {
+        margin-bottom: 1.5%;
+    }
+
+    h2 {
+        margin-bottom: 2%;
+    }
+
+    div {
+        margin-top: 3%;
+    }
+
+    #paddingP {
+        padding-bottom: 2%;
+    }
+}
