@@ -22,6 +22,10 @@ div {
     padding-right: 5%;
 }
 
+#h5Wrapper {
+    animation: from-right 0.8s;
+}
+
 #wfmWrapper {
     animation: from-right 1s;
 }
@@ -30,24 +34,8 @@ div {
     animation: from-right 1.2s;
 }
 
-#scWrapper {
+#scWrapper, #kappahlWrapper, #thWrapper, #shortJobsWrapper, #diverseWrapper {
     animation: from-right 1.4s;
-}
-
-#kappahlWrapper {
-    animation: from-right 1.6s;
-}
-
-#thWrapper {
-    animation: from-right 1.8s;
-}
-
-#shortJobsWrapper {
-    animation: from-right 1.8s;
-}
-
-#diverseWrapper {
-    animation: from-right 1.8s;
 }
 
 h2 {
